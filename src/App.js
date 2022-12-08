@@ -1,12 +1,12 @@
 import React from 'react';
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import image from './Assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg';
+import routes from './routers';
 
 function App() {
   return (
-    <div className="App">
-      <img src={image} height="550px" width="100%" alt="" />
-
+    <div className="md:mx-20">
+        <RouterProvider router={routes} />
     </div>
   );
 }
