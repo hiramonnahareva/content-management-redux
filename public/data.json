@@ -1,306 +1,91 @@
 [
-    {
-      "_id": 1,
-      "model": "Food blogs",
-      "image": "https://img.freepik.com/free-photo/flat-lay-batch-cooking-composition_23-2148765597.jpg?w=2000",
-      "status": true,
-      "date": "5 dec 2022",
-      "time": "12:30am",
-      "descriptions":
-            "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-      
-      "price": 128200,
-      "rating": 3,
-      "spec": [
-        {
-          "processor": "AMD RYZEN 5 5600X PROCESSOR"
-        },
-        {
-          "motherboard": "Gigabyte B550M DS3H AM4 AMD Micro ATX Motherboard"
-        },
-        {
-          "ram": "Corsair Vengeance LPX 16GB DDR4 DRAM 3200MHz RAM"
-        },
-        {
-          "graphics": "PNY GeForce RTX 3070 8GB UPRISING Dual Fan LHR GDDR6 Graphics Card"
-        },
-        {
-          "storage": "Team MP33 128GB M.2 PCIe SSD Toshiba P300 1TB Desktop PC Internal Hard Drive"
-        },
-        {
-          "casing": "Antec NX420 Mid Tower ARGB Gaming Case"
-        },
-        {
-          "psu": "Antec CUPRUM STRIKE CSK 650W 80 Plus Bronze Power Supply"
-        },
-        {
-          "cooler": "Gamdias Boreas M1-610 ARGB CPU Cooler"
-        }
-      ]
-    },
-    {
-      "_id": 2,
-      "model": "Travel blogs",
-      "image": "https://media.istockphoto.com/id/1277238348/photo/woman-travelling-with-kayak-in-nature-and-vlogging.jpg?b=1&s=170667a&w=0&k=20&c=hDJv8uED5_N9H6pM0Jghpkvohsg35F1VLD538RPRVlc=",
-       "date": "4 dec 2022",
-      "time": "11:30am",
-      "descriptions":
-            "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-      
-      "keyFeature": [
-        "MSI H510M-A PRO Intel 10th Gen and 11th Gen Mirco-ATX Motherboard",
-        "Intel i3-10100 10th Gen Processor",
-        "8GB 2666MHz DDR4 RAM +1TB HDD",
-        "GIGABYTE GT 730 2GB DDR3 PCI EXPRESS Graphics Card"
-      ],
-      "price": 41800,
-      "rating": 4,
-      "spec": [
-        {
-          "processor": "Intel Core i3-10100 10th Gen Processor"
-        },
-        {
-          "motherboard": "MSI H510M-A PRO Intel 10th Gen and 11th Gen Mirco-ATX Motherboard"
-        },
-        {
-          "ram": "TEAM ELITE PLUS RED 8GB 2666MHz DDR4 RAM"
-        },
-        {
-          "graphics": "GIGABYTE GeForce GT 730 2GB DDR3 PCI EXPRESS Graphics Card"
-        },
-        {
-          "storage": "Toshiba P300 1TB Desktop PC Internal Hard Drive"
-        },
-        {
-          "casing": "Revenger A1 Mid Tower RGB ATX Gaming Case"
-        },
-        {
-          "psu": "Antec Atom V450 Non-Modular IN SMPS Gaming Power Supply"
-        }
-      ]
-    },
-    {
-      "_id": 3,
-      "model": "Health and fitness blogs",
-      "image": "https://www.blogtyrant.com/wp-content/uploads/2020/02/how-long-should-a-blog-post-be.png",
-      "status": false,
-      "date": "6 dec 2022",
-      "time": "10:30am",
-      "descriptions":
-            "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-      
-      "price": 84400,
-      "rating": 5,
-      "spec": [
-        {
-          "processor": "AMD Ryzen 5 3600 Processor"
-        },
-        {
-          "motherboard": "MSI B450 TOMAHAWK MAX AM4 AMD ATX Motherboard (China)"
-        },
-        {
-          "ram": "Team T-Force VULCAN Z Red 8GB DDR4 3200MHz Desktop Gaming RAM- 2 unit"
-        },
-        {
-          "graphics": "ZOTAC GAMING GeForce GTX 1660 SUPER 6GB GDDR6 Twin Fan Graphics Card"
-        },
-        {
-          "storage": "Team MP33 128GB M.2 PCIe SSD Western Digital 1TB Blue Desktop HDD"
-        },
-        {
-          "casing": "Xtreme XJOGOS 200-22 RGB Mid Tower Black ATX Gaming Casing"
-        },
-        {
-          "psu": "Antec CUPRUM STRIKE CSK 650W 80 Plus Bronze Power Supply"
-        }
-      ]
-    },
-    {
-      "_id": 4,
-      "model": "Lifestyle blogs",
-      "image": "data:image/jpeg;base64,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",
-      "status": false,
-      "date": "8 dec 2022",
-      "time": "08:30am",
-      "brand": "intel",
-      "descriptions":
-            "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-      
-      "price": 56700,
-      "rating": 3,
-      "spec": [
-        {
-          "processor": "Intel 10th Gen Core i5-10400F Processor"
-        },
-        {
-          "motherboard": "MSI B560M-A PRO Intel 11th Gen mATX Motherboard"
-        },
-        {
-          "ram": "Team T-Force VULCAN Z Red 8GB DDR4 3200MHz Desktop Gaming RAM"
-        },
-        {
-          "graphics": "ASUS GeForce GT 1030 2GB GDDR5 Low Profile Graphics Card"
-        },
-        {
-          "storage": "Toshiba P300 1TB Desktop PC Internal Hard Drive Team MP33 128GB M.2 PCIe SSD"
-        },
-        {
-          "casing": "Antec NX270 RGB TG Mid Tower Gaming Case"
-        },
-        {
-          "psu": "Antec VP450P PLUS 450W Continuous Power Supply"
-        }
-      ]
-    },
-    {
-      "_id": 5,
-      "model": "Fashion and beauty blogs",
-      "image": "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png",
-      "status": false,
-      "date": "9 dec 2022",
-      "time": "11:30am",
-      "brand": "intel",
-      "descriptions":
-            "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-      
-     
-      "price": 102200,
-      "spec": [
-        {
-          "processor": "Intel 10th Gen Core i7-10700 Processor"
-        },
-        {
-          "motherboard": "ASRock B560M Steel Legend 10th and 11th Gen Micro ATX Motherboard"
-        },
-        {
-          "ram": "TEAM T-Force DELTA TUF Gaming RGB 16GB 3200MHz DDR4 CL16 RAM"
-        },
-        {
-          "graphics": "Colorful GeForce GTX 1660 Super NB 6GB-V2 Graphics Card"
-        },
-        {
-          "storage": "Seagate Internal 1TB SATA Barracuda HDD Team MP33 256GB M.2 PCIe SSD"
-        },
-        {
-          "casing": "Corsair CARBIDE SPEC-DELTA RGB ATX Gaming Case"
-        },
-        {
-          "psu": "Antec CUPRUM STRIKE CSK 550W 80 Plus Bronze Power Supply"
-        }
-      ]
-    },
-    {
-      "_id": 6,
-      "model": "Photography blogs",
-      "image": "https://iotvnaw69daj.i.optimole.com/cb:n2y9~6666f/w:1450/h:740/q:mauto/f:avif/https://www.codeinwp.com/wp-content/uploads/2018/03/what-to-blog-about.jpg",
-      
-       "date": "5 dec 2022",
-      "time": "11:30am",
-      "brand": "intel",
-      "descriptions":
-            "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-      
-      "price": 86200,
-      "rating": 2,
-      "spec": [
-        {
-          "processor": "Intel 11th Gen Core i5-11400 Rocket Lake Processor"
-        },
-        {
-          "motherboard": "TEAM T-Force DELTA TUF Gaming RGB 16GB 3200MHz DDR4 CL16 RAM"
-        },
-        {
-          "ram": "Team T-Force VULCAN Z Red 8GB DDR4 3200MHz Desktop Gaming RAM- 2 unit"
-        },
-        {
-          "graphics": "ZOTAC GAMING GeForce GTX 1660 SUPER 6GB GDDR6 Twin Fan Graphics Card"
-        },
-        {
-          "storage": "Toshiba P300 1TB Desktop PC Internal Hard Drive Team MP33 256GB M.2 PCIe SSD"
-        },
-        {
-          "casing": "Montech X2 MESH Black Mid-Tower ATX Gaming Case"
-        },
-        {
-          "psu": "DeepCool PK650D 650 Watt 80 PLUS Bronze Power Supply"
-        }
-      ]
-    },
-    {
-      "_id": 7,
-      "model": "Personal blogs",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkAUwNygfqJ3BsVX94qBskmPA61yShieRybqLO9s-X2OKvP09cO8Lzn7z6asY97nipFtk&usqp=CAU",
-      
-      "date": "9 dec 2022",
-      "time": "06:30am",
-      "brand": "intel",
-      "descriptions":
-            "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-      
-            "price": 84000,
-      "rating": 5,
-      "spec": [
-        {
-          "processor": "Intel 11th Gen Core i5-11400F Rocket Lake Processor (3 Years Warranty)"
-        },
-        {
-          "motherboard": "ASRock B560M Steel Legend 10th and 11th Gen Micro ATX Motherboard (3 Years Warranty)"
-        },
-        {
-          "ram": "Team T-Force VULCAN Z Red 16GB DDR4 3200MHz Desktop Gaming RAM (Lifetime Warranty)"
-        },
-        {
-          "graphics": "Asus Phoenix GeForce GTX 1050Ti 4GB GDDR5 Graphics Card (2 Years Warranty)"
-        },
-        {
-          "storage": "Team MP33 128GB M.2 PCIe SSD (5 Years Warranty) Seagate Internal 1TB SATA Barracuda HDD (2 Years Warranty)"
-        },
-        {
-          "casing": "Antec NX410 Mid Tower ARGB Black Gaming Case"
-        },
-        {
-          "psu": "Antec CUPRUM STRIKE CSK 550W 80 Plus Bronze Power Supply (3 Years Warranty)"
-        },
-        {
-          "cooler": "Gamdias CHIONE M2-240 Lite RGB CPU Cooler (02-Year Warranty)"
-        }
-      ]
-    },
-    {
-      "_id": 8,
-      "model": "DIY craft blogs",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1dVWrhE5V00zLNAM_KL-AtKMR4rsf9BDElL1Wy84XrCEu69ieXgUS1mmj7M9Av97Atio&usqp=CAU",
-      
-       "date": "5 dec 2022",
-      "time": "11:30am",
-      "descriptions":
-      "Definition and classification: Food is any substance consumed to provide nutritional support and energy to an organism.[2][3] It can be raw, processed or formulated and is consumed orally by animals for growth, health or pleasure. Food is mainly composed of water, lipids, proteins and carbohydrates. Minerals (e.g. salts) and organic substances (e.g. vitamins) can also be found in food.[4] Plants, algae and some microorganisms use photosynthesis to make their own food molecules.[5] Water is found in many foods and has been defined as a food by itself.Food sources: A typical aquatic food web In a given ecosystem, food forms a web of interlocking chains with primary producers at the bottom and apex predators at the top.[14] Other aspects of the web include detrovores (that eat detritis) and decomposers (that break down dead organisms).[14] Primary producers include algae, plants, bacteria and protists that acquire their energy from sunlight.[15] Primary consumers are the herbivores that consume the pants and secondary consumers are the carnivores that consume those herbivores. Some organisms, including most mammals and birds, diets consist of both animals and plants. Sunlight: Photosynthesis is the ultimate source of energy and food for nearly all life on earth.[25] It is the main food source for plants, algae and certain bacteria.[26] Without this all organisms which depend on these organisms further up the food chain would be unable to exist, from coral to lions.[27] Energy from the sun is absorbed and used to transform water and carbon dioxide in the air or soil into oxygen and glucose. The oxygen is then released and the glucose stored as an energy reserve.[28] Plants: Foods from plant sources Plants as a food source are often divided into seeds, fruits, vegetables, legumes, grains and nuts.[29] Where plants fall within these categories can vary with botanically described fruits such as the tomato, squash, pepper and eggplant or seeds like peas commonly considered vegetables.[30] Food is a fruit if the part eaten is derived from the reproductive tissue, so seeds, nuts and grains are technically fruit.[31][32] From a culinary perspective fruits are generally considered the remains of botanically described fruits after grains, nuts, seeds and fruits used as vegetables are removed.",
-
-      "spec": [
-        {
-          "processor": "AMD Ryzen 7 5800X3D Processor"
-        },
-        {
-          "motherboard": "ASRock B550 Steel Legend DDR4 AMD AM4 ATX Motherboard"
-        },
-        {
-          "ram": "Team T-Force Night Hawk RGB 8GB (KIT) 3200MHz DDR4 RAM (4 UNIT)"
-        },
-        {
-          "graphics": "Colorful GeForce RTX 4090 NB EX-V 24GB GDDR6X Graphics Card"
-        },
-        {
-          "storage": "Samsung 980 Pro 500GB PCIe 4.0 M.2 NVMe SSD"
-        },
-        {
-          "casing": "Antec TORQUE Black + Red Aluminum ATX Mid Tower Gaming Casing"
-        },
-        {
-          "psu": "Antec HCG-750 Gold Series 750W Full Modular Power Supply"
-        },
-        {
-          "cooler": "Antec Prizm X 120 ARGB 3+C Cooling Fan"
-        }
-      ]
-    }
-  ]
+  {
+    "title": "Frontend",
+    "category": "Web",
+    "subCategory": ["frontend", "ui/ux", "design"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "https://media.istockphoto.com/id/1128571392/photo/self-development-motivational-words-quotes-concept.jpg?s=612x612&w=0&k=20&c=UGtd_Udk2a5jc3UiLyvYHlseKwPUZDV2J54d7FLR9Zg=",
+    "date": "June 03, 2021",
+    "cover": "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
+  },
+  {
+    "title": "Web developer",
+    "category": "Web",
+    "subCategory": ["vacation", "holidays", "sight seeing"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "/assets/images/author.jpg",
+    "date": "June 03, 2021",
+    "cover": "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
+  },
+  {
+    "title": "Full-stack developer",
+    "category": "web",
+    "subCategory": ["e-commerce store", "clothing", "shopping store"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074075.jpg?w=2000",
+    "date": "June 03, 2021",
+    "cover": "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
+  },
+  {
+    "title": "Big data developer",
+    "category": "adventure",
+    "subCategory": ["adrenaline", "stay-fit", "lifestyle"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "https://images.unsplash.com/photo-1618083707368-b3823daa2726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFkdmVudHVyZXxlbnwwfHwwfHw%3D&w=1000&q=80",
+    "date": "June 03, 2021",
+    "cover": "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
+  },
+  {
+    "title": "Mobile developer",
+    "category": "Full-stack developer",
+    "subCategory": ["bbq", "food", "lifestyle"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "https://media.istockphoto.com/id/1219944808/photo/closeup-of-young-female-hands-chopping-fresh-vegetables-on-chopping-board-while-in-modern.jpg?s=612x612&w=0&k=20&c=yenJMmfv1jmG-79hN_Xb2xN_URbbGd1B1jOd2h78HEY=",
+    "date": "June 03, 2021",
+    "cover": "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
+  },
+  {
+    "title": "Game developer",
+    "category": "travel",
+    "subCategory": ["beaches", "sea", "holidays"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "https://media.istockphoto.com/id/1277238348/photo/woman-travelling-with-kayak-in-nature-and-vlogging.jpg?b=1&s=170667a&w=0&k=20&c=hDJv8uED5_N9H6pM0Jghpkvohsg35F1VLD538RPRVlc=",
+    "date": "June 03, 2021",
+    "cover":
+      "/assets/images/Purple-Combination-colors-graphic-design-predictions-1024x576-1024x576.jpg"
+  },
+  {
+    "title": "Software developer",
+    "category": "Software developer",
+    "subCategory": ["skill", "design", "passion"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "/assets/images/author.jpg",
+    "date":"June 03, 2022",
+    "cover": "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
+  },
+  {
+    "title": "Health and fitness",
+    "category": "health",
+    "subCategory": ["food", "exercise", "balanced diet"],
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "authorName": "John Doe",
+    "authorAvatar": "https://economictimes.indiatimes.com/thumb/msid-73074326,width-1200,height-900,resizemode-4,imgsize-80591/health-insurance-getty-imag.jpg?from=mdr",
+    "date":"June 03, 2022",
+    "cover": "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
+  }
+]

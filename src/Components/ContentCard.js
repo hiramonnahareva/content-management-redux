@@ -13,14 +13,19 @@ const ContentCard = ({content}) => {
     const {pathname} = useLocation();
     return (
         <div className='shadow-sm relative rounded border p-3 flex flex-col text-gray-900' onClick={()=>dispatch(addContent(content))}>
-        <div className='h-40 w-56 mx-auto'>
-          <img src={content.image} alt={content.model} />
+        <div className=' h-48 w-72'>
+          <img src={content.authorAvatar} alt={content.title} />
         </div>
-        <h1 className='font-bold text-center'>{content.model}</h1>
-        <div className='flex gap-5 mt-4 justify-center'>
-        <p className='text-center font-semibold mb-3'>time: {content.time}</p>
-        <p className='text-center font-semibold mb-3'>Date: {content.date}</p>
-        </div>
+      <button className=' bg-gradient-to-r from-blue-500 to-cyan-500 text-yellow-50 mt-2 rounded py-1 w-32 font-semibold mb-3'>{content.category}</button>
+      {/* <div className="flex gap-2">
+      {content.subCategory.map((category) => 
+        <ul>
+          <li className=' bg-slate-300 mt-2 rounded px-2 font-semibold mb-3'>{category}</li>
+        </ul>
+      )}
+      </div> */}
+        <h1 className='font-bold text-[18px] text-blue-500'>{content.title}</h1>
+        <p className='font-semibold mb-3'>Date: {content.createdAt}</p>
         <div className='flex gap-20 mt-5'>
        
             
@@ -44,7 +49,7 @@ const ContentCard = ({content}) => {
         <div className=' flex-1'>
        {!pathname.includes('readHistory') &&
         <p className="text">
-        {isReadMore ? content.descriptions.slice(0, 150) : content.descriptions}
+        {isReadMore ? content.description.slice(0, 150) : content.description}
         <span onClick={toggleReadMore} className="read-or-hide cursor-pointer">
           {isReadMore ? "... read more" : " show less"}
         </span>

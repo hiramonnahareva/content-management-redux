@@ -3,11 +3,13 @@ import { useSelector } from 'react-redux';
 import ContentCard from '../Components/ContentCard';
 
 const ReadHistory = () => {
-    const addContent = useSelector((state) => state.content)
+    const addContent = useSelector((state) => state.content.content)
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
             {
-                addContent.map((content) => <ContentCard content={content}></ContentCard>)
+                addContent
+                .sort((a, b) => a.ContentCard - b.ContentCard)
+                .map((content) => <ContentCard content={content}></ContentCard>)
             }
         </div>
     );
