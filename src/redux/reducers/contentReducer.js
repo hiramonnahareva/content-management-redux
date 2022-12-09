@@ -8,7 +8,7 @@ const contentReducer = (state = initialState, action) =>{
     const clickContent =  state.content.find((content) => content._id === action.payload._id);
     switch (action.type){
         case LOAD_CONTENT: {
-            return{
+            return {
                 ...state,
                 contents: action.payload,
             }

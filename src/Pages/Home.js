@@ -4,30 +4,31 @@ import ContentCard from '../Components/ContentCard';
 import { loadContent } from '../redux/actionCreators/contentActions';
 // import { loadContent } from '../redux/actionCreators/contentActions';
 import { toggleCategory, toggleStock } from '../redux/actionCreators/filterActions';
-import loadContentData from '../redux/thunk/contents/fetchContents';
+import contentCounter from '../redux/thunk/contents/fetchContents';
 
 const Home = () => {
   const activeClass = "text-white bg-blue-500 border-white";
   const dispatch = useDispatch();
+  // const [contents, setContent] = useState([]);
     const filters = useSelector((state) => state.filter.filter);
-    const contents = useSelector((state) => state.content.contents);
+    const contents = useSelector((state) =>  state.content.contents);
+    
     const {categorys, stock} = filters;
-    console.log(categorys, stock)
-    useEffect(() => {
-      dispatch(loadContentData())
-    }, [dispatch]);
+      useEffect(() => {
+        dispatch(contentCounter())
+      }, [dispatch]);
 
     // conditional rendering content
     let content;
-    if(contents.length){
-     content = contents.map(content => <ContentCard content={content}></ContentCard>)
+    if(contents?.length){
+     content = contents.map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
-    if(contents.length && (stock || categorys.length)){
-     content = contents.map(content => <ContentCard content={content}></ContentCard>)
+    if(contents?.length && (stock || categorys.length)){
+     content = contents.map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
 
-    const state = useSelector((state) => state)
-    console.log(state)
+    // const state = useSelector((state) => state)
+    // console.log(state)
     
     return (
        <div className=''>
