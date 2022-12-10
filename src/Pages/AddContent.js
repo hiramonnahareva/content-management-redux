@@ -2,28 +2,25 @@ import React from 'react';
 
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-// import addProductData from "../../redux/thunk/products/addProductData";
+import addcontentData from '../redux/thunk/contents/addContentData';
+// import { addContent } from '../redux/actionCreators/contentActions';
+// import addcontentData from "../../redux/thunk/contents/addcontentData";
 
-const Post = () => {
+const AddContent = () => {
     const { register, handleSubmit } = useForm();
     const dispatch = useDispatch();
   
     const submit = (data) => {
-      const product = {
-        model: data.model,
-        brand: data.brand,
-        status: data.status === "true" ? true : false,
-        price: data.price,
-        keyFeature: [
-          data.keyFeature1,
-          data.keyFeature2,
-          data.keyFeature3,
-          data.keyFeature4,
-        ],
-        spec: [],
+      const content = {
+        title: data.title,
+        category: data.tag,
+        image: data.image,
+        // status: data.status === "true" ? true : false,
+        date: data.time,
+        description: data.description,
       };
-      console.log(product);
-    //   dispatch(addProductData(product));
+      console.log(content);
+      dispatch(addcontentData(content));
     };
     
       return (
@@ -34,41 +31,43 @@ const Post = () => {
           >
             <div className='flex flex-col w-full max-w-xs'>
               <label className='mb-2' htmlFor='model'>
-                Model
+                title
               </label>
-              <input placeholder='model' type='text' id='model' {...register("model")} />
+              <input placeholder='title' type='text' id='title' className='p-2 border-[1px] rounded border-gray-400' {...register("title")} />
             </div>
             <div className='flex flex-col w-full max-w-xs'>
               <label className='mb-2' htmlFor='image'>
                 Image
               </label>
-              <input type='text' name='image' id='image' {...register("image")} />
+              <input type='text' name='image' id='image' className='p-2 border-[1px] rounded border-gray-400' {...register("image")} />
             </div>
     
             <div className='flex flex-col w-full max-w-xs'>
-              <label className='mb-3' htmlFor='brand'>
-                Brand
+              <label className='mb-3' htmlFor='tag'>
+                Category
               </label>
-              <select name='brand' id='brand' {...register("brand")}>
-                <option value='amd'>AMD</option>
-                <option value='intel'>Intel</option>
+              <select name='tag' id='tag' className='p-2 border-[1px] rounded border-gray-400' {...register("tag")}>
+                <option value='wed'>wed</option>
+                <option value='app'>app</option>
+                <option value='software'>software</option>
               </select>
             </div>
             <div className='flex flex-col w-full max-w-xs'>
-              <label className='mb-2' htmlFor='price'>
-                Image
+              <label className='mb-2' htmlFor='time'>
+                Date/time: 
               </label>
-              <input type='text' name='price' id='price' {...register("price")} />
+              <input type='date' name='time' id='time' className='p-2 border-[1px] rounded border-gray-400' {...register("time")} />
             </div>
     
-            <div className='flex flex-col w-full max-w-xs'>
-              <h1 className='mb-3'>Availability</h1>
+            {/* <div className='flex flex-col w-full max-w-xs'>
+              <h1 className='mb-3'>Upload Status</h1>
               <div className='flex gap-3'>
                 <div>
                   <input
                     type='radio'
                     id='available'
                     value={true}
+                    className='p-2 border-[1px] rounded border-gray-400'
                     {...register("status")}
                   />
                   <label className='ml-2 text-lg' htmlFor='available'>
@@ -81,6 +80,7 @@ const Post = () => {
                     id='stockOut'
                     name='status'
                     value={false}
+                    className='p-2 border-[1px] rounded border-gray-400'
                     {...register("status")}
                   />
                   <label className='ml-2 text-lg' htmlFor='stockOut'>
@@ -88,16 +88,17 @@ const Post = () => {
                   </label>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className='flex flex-col w-full max-w-xs'></div>
-            <div className='flex flex-col w-full max-w-xs'>
-              <label className='mb-2' htmlFor='keyFeature1'>
+            <div className='flex flex-col w-full'>
+              {/* <label className='mb-2' htmlFor='keyFeature1'>
                 Key Feature 1
               </label>
               <input
                 type='text'
                 name='keyFeature1'
                 id='keyFeature1'
+                className='p-2 border-[1px] rounded border-gray-400'
                 {...register("keyFeature1")}
               />
             </div>
@@ -109,6 +110,7 @@ const Post = () => {
                 type='text'
                 name='keyFeature2'
                 id='keyFeature2'
+                className='p-2 border-[1px] rounded border-gray-400'
                 {...register("keyFeature2")}
               />
             </div>
@@ -120,6 +122,7 @@ const Post = () => {
                 type='text'
                 name='keyFeature3'
                 id='keyFeature3'
+                className='p-2 border-[1px] rounded border-gray-400'
                 {...register("keyFeature3")}
               />
             </div>
@@ -131,13 +134,16 @@ const Post = () => {
                 type='text'
                 name='keyFeature4'
                 id='keyFeature4'
+                className='p-2 border-[1px] rounded border-gray-400'
                 {...register("keyFeature4")}
-              />
+              /> */}
+              <label htmlFor="description">description</label>
+              <textarea placeholder='Enter Description' type="text" name="description" id="description" cols="60" rows="5"className='rounded border-[1px] border-gray-400 px-2 py-3' {...register("description")}></textarea>
             </div>
     
             <div className='flex justify-between items-center w-full'>
               <button
-                className=' px-4 py-3 bg-indigo-500 rounded-md font-semibold text-white text-lg disabled:bg-gray-500'
+                className='px-4 py-3 bg-indigo-500 rounded-md font-semibold text-white text-lg disabled:bg-gray-500'
                 type='submit'
               >
                 Submit
@@ -148,4 +154,4 @@ const Post = () => {
       );
 };
 
-export default Post;
+export default AddContent;

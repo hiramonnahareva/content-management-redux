@@ -1,4 +1,4 @@
-import { ADD_CONTENT, DELETE_CONTENT, LOAD_CONTENT } from "../actionTypes/actionTypes";
+import { READ_CONTENT, DELETE_CONTENT, GET_CONTENT, ADD_CONTENT, UPDATE_CONTENT } from "../actionTypes/actionTypes";
 
 const initialState = {
     content: [],
@@ -7,13 +7,27 @@ const initialState = {
 const contentReducer = (state = initialState, action) =>{
     const clickContent =  state.content.find((content) => content._id === action.payload._id);
     switch (action.type){
-        case LOAD_CONTENT: {
+        case GET_CONTENT: {
             return {
                 ...state,
                 contents: action.payload,
             }
         }
-        case ADD_CONTENT: 
+        case ADD_CONTENT: {
+            return {
+                ...state,
+                contents: [...state.content, action.payload],
+            }
+        }
+        case READ_CONTENT: 
+        if(clickContent){
+            return state;
+        }
+        return {
+            ...state,
+            content: [...state.content, action.payload]
+        };
+        case UPDATE_CONTENT: 
         if(clickContent){
             return state;
         }

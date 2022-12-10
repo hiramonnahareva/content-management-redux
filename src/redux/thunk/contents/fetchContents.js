@@ -1,6 +1,6 @@
 import { loadContent } from "../../actionCreators/contentActions";
 
- const contentCounter = () => {
+ const getContentData = () => {
     return async(dispatch, getState) => {
         const res = await fetch("http://localhost:5000/contents");
         const data = await res.json();
@@ -10,4 +10,4 @@ import { loadContent } from "../../actionCreators/contentActions";
         }
     }
 }
-export default contentCounter;
+export default getContentData;
