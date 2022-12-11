@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "./Layout/Main";
 import AddContent from "./Pages/AddContent";
+import ContentList from "./Pages/ContentList";
 import Home from "./Pages/Home";
 import ReadHistory from "./Pages/ReadHistory";
 import Update from "./Pages/Update";
@@ -23,13 +24,13 @@ const routes = createBrowserRouter([
       },
     
       {
-        path: "update",
+        path: "/update/:id",
         element: <Update />,
       },
-//       {
-//         path: "top-rated",
-//         element: <TopRated />,
-//       },
+      {
+        path: "contentList",
+        element: <ContentList/>,
+      },
 //       {
 //         path: "cart",
 //         element: <Cart />,

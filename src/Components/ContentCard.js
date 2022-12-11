@@ -30,9 +30,9 @@ const ContentCard = ({content}) => {
        
             
            { pathname.includes('readHistory') &&  
-           <Link to='/update'
-           title='Remove'
-           className=' border-2 border-emerald-400 text-center rounded flex-1 py-1 ms-20 text-emerald-400 text-bold' onClick={() => dispatch(updateContent(content._id, content))}
+           <Link to={`/update/${content?._id}` }
+           title='update'
+           className=' border-2 border-emerald-400 text-center rounded flex-1 py-1 ms-20 text-emerald-400 text-bold' onClick={() => dispatch(updateContent(content?._id, content))}
            >
               Update
               </Link>

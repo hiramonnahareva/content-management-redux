@@ -28,9 +28,9 @@ const contentReducer = (state = initialState, action) =>{
             content: [...state.content, action.payload]
         };
         case UPDATE_CONTENT: 
-        if(clickContent){
-            return state;
-        }
+        // if(clickContent){
+        //     return state;
+        // }
         return {
             ...state,
             content: [...state.content, action.payload]

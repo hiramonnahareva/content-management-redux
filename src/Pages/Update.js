@@ -1,12 +1,15 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
+import { useParams } from 'react-router-dom';
 import updateData from '../redux/thunk/contents/updateContent';
 // import { addContent } from '../redux/actionCreators/contentActions';
 // import addcontentData from "../../redux/thunk/contents/addcontentData";
-const Update = (id) => {
+const Update = () => {
+
     const { register, handleSubmit } = useForm();
     const dispatch = useDispatch();
+    const {id} = useParams()
   
     const submit = (data) => {
       const content = {
@@ -16,6 +19,7 @@ const Update = (id) => {
         date: data.time,
         description: data.description,
       };
+      console.log(id, content)
       dispatch(updateData(id, content));
     };
 
