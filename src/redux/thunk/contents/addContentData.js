@@ -1,4 +1,5 @@
 import { addContent } from "../../actionCreators/contentActions";
+import swal from 'sweetalert';
 
 const addcontentData = (content) => {
     return async(dispatch, getState) => {
@@ -17,6 +18,8 @@ const addcontentData = (content) => {
           ...content,
         })
       );
+      
+      swal("Good job!", "You clicked the button!", "success");
     }
   };
 }

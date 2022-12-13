@@ -6,6 +6,8 @@ const initialState = {
 
 const contentReducer = (state = initialState, action) =>{
     const clickContent =  state.content.find((content) => content._id === action.payload._id);
+    const updateContent =  state.content.find((content) => console.log(content._id, action.payload._id));
+    console.log()
     switch (action.type){
         case GET_CONTENT: {
             return {
@@ -33,13 +35,14 @@ const contentReducer = (state = initialState, action) =>{
         // }
         return {
             ...state,
-            content: [...state.content, action.payload]
+            content: [...state.content, action.payload],
+            updateContent
         };
-        case DELETE_CONTENT: 
-        return {
-            ...state,
-            content: state.content.filter((content) => content._id !== action.payload._id), 
-        };
+        // case DELETE_CONTENT: 
+        // return {
+        //     ...state,
+        //     content: state.content.filter((content) => content._id !== action.payload._id), 
+        // };
         default: 
         return state;
     }

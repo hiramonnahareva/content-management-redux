@@ -2,7 +2,7 @@ import React, { useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ContentCard from '../Components/ContentCard';
 // import { loadContent } from '../redux/actionCreators/contentActions';
-import { toggleCategory, toggleStock } from '../redux/actionCreators/filterActions';
+import { toggleCategory, toggleFirstUpload, toggleStock } from '../redux/actionCreators/filterActions';
 import getContentData from '../redux/thunk/contents/fetchContents';
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
     if(contents?.length){
      content = contents.map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
-    if(contents?.length && (stock || categorys.length)){
+    if(contents?.length && (categorys.length)){
      content = contents.map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
     
@@ -29,11 +29,11 @@ const Home = () => {
        <div className=''>
       <div className='mb-10 flex justify-end gap-5'>
         <button className={`border px-3 py-1 rounded-full font-semibold ${ stock ? activeClass : null}`}
-        onClick={() => dispatch(toggleStock())}
+        onClick={() => dispatch(toggleFirstUpload())}
         >
-          stock
+          First Upload
         </button>
-        <button className={`border px-3 py-1 rounded-full font-semibold ${ categorys.includes("Development") ? activeClass : null}`} onClick={() => dispatch(toggleCategory("Development"))}
+        <button className={`border px-3 py-1 rounded-full font-semibold ${ categorys.includes("web") ? activeClass : null}`} onClick={() => dispatch(toggleCategory("web"))}
         >
           Wed
         </button>

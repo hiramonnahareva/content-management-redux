@@ -1,90 +1,78 @@
 import React, { useEffect } from "react";
+import { MdOutlineEdit } from "react-icons/md";
+import { RiDeleteBin5Line } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteContent, loadContent } from "../redux/actionCreators/contentActions";
+import getContentData from "../redux/thunk/contents/fetchContents";
+import removeContent from "../redux/thunk/contents/removeContetnt";
 // import deleteContent from "../../redux/thunk/Contents/deleteContent";
 // import loadContentData from "../../redux/thunk/Contents/fetchContents";
 
 const ContentList = () => {
-    const dispatch = useDispatch();
-    const contents = useSelector((state) =>  state.content.contents);
-
-  useEffect(() => {
-    dispatch(loadContent());
-  });
+  const dispatch = useDispatch();
+  const contents = useSelector((state) =>  state.content.contents);
+    useEffect(() => {
+      dispatch(getContentData())
+    }, [dispatch]);
 
   return (
-    <div class='flex flex-col justify-center items-center h-full w-full '>
-      <div class='w-full max-w-7xl mx-auto rounded-lg  bg-white shadow-lg border border-gray-200'>
-        <header class='px-5 py-4 border-b border-gray-100'>
-          <div class='font-semibold text-gray-800'>Contents</div>
+    <div className='flex flex-col justify-center items-center h-full w-full '>
+      <div className='w-full max-w-7xl mx-auto rounded-lg  bg-white shadow-lg border border-gray-200'>
+        <header className='px-5 py-4 border-b border-gray-100'>
+          <div className='font-semibold text-gray-800'>Contents</div>
         </header>
 
-        <div class='overflow-x-auto p-3'>
-          <table class='table-auto w-full'>
-            <thead class='text-xs font-semibold uppercase text-gray-400 bg-gray-50'>
+        <div className='overflow-x-auto p-3'>
+          <table className='table-auto w-full'>
+            <thead className='text-xs font-semibold uppercase text-gray-600 bg-gray-50'>
               <tr>
                 <th></th>
-                <th class='p-2'>
-                  <div class='font-semibold text-left'>Content Name</div>
+                <th className='p-2'>
+                  <div className='font-semibold text-left'>Content Name</div>
                 </th>
-                <th class='p-2'>
-                  <div class='font-semibold text-left'>description</div>
+                <th className='p-2'>
+                  <div className='font-semibold text-left'>Category</div>
                 </th>
-                <th class='p-2'>
-                  <div class='font-semibold text-left'>In Stock</div>
+                <th className='p-2'>
+                  <div className='font-semibold text-left'>Date</div>
                 </th>
-                <th class='p-2'>
-                  <div class='font-semibold text-left'>Price</div>
+                <th className='p-2'>
+                  <div className='font-semibold text-left'>Edit</div>
                 </th>
-                <th class='p-2'>
-                  <div class='font-semibold text-center'>Action</div>
+                <th className='p-2'>
+                  <div className='font-semibold text-center'>Delete</div>
                 </th>
               </tr>
             </thead>
 
-            <tbody class='text-sm divide-y divide-gray-100'>
-              {contents?.map(({ title, category,  _id }) => (
-                <tr>
-                  <td class='p-2'>
-                    <input type='checkbox' class='w-5 h-5' value='id-1' />
+            <tbody className='text-sm divide-y divide-gray-100'>
+              {contents?.map(({ title, category, date,  _id }) => (
+                <tr key={_id}>
+                  <td className='p-2'>
+                    <input type='checkbox' className='w-5 h-5' value='id-1' />
                   </td>
-                  <td class='p-2'>
-                    <div class='font-medium text-gray-800'>{title}</div>
+                  <td className='p-2'>
+                    <div className='font-medium text-gray-800'>{title}</div>
                   </td>
-                  <td class='p-2'>
-                    <div class='text-left capitalize'>{}</div>
-                  </td>
-                  <td class='p-2'>
-                    <div class='text-left'>
-                      {/* {status ? (
-                        <p className='text-green-500 font-medium'>Available</p>
-                      ) : (
-                        <p className='text-red-500 font-medium'>Stock out</p>
-                      )} */}
+                  <td className='p-2'>
+                    <div className='text-left'>
+                      
+                        <p className=' font-medium'>{category}</p>
+                        
                     </div>
                   </td>
-                  <td class='p-2'>
-                    <div class='text-left font-medium text-indigo-500'>
-                      {/* {price} */}
+                  <td className='p-2'>
+                    <div className='text-left font-medium'>
+                      {date}
                     </div>
                   </td>
-                  <td class='p-2'>
-                    <div class='flex justify-center'>
-                      <button onClick={() => dispatch(deleteContent(_id))}>
-                        <svg
-                          class='w-8 h-8 hover:text-blue-600 rounded-full hover:bg-gray-100 p-1'
-                          fill='none'
-                          stroke='currentColor'
-                          viewBox='0 0 24 24'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            stroke-linecap='round'
-                            stroke-linejoin='round'
-                            stroke-width='2'
-                            d='M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16'
-                          ></path>
-                        </svg>
+                          <td className='p-2'>
+                            <div className='text-left capitalize'><MdOutlineEdit className="text-2xl text-blue-500"/></div>
+                          </td>
+                  <td className='p-2'>
+                    <div className='flex justify-center'>
+                      <button onClick={() => dispatch(removeContent(_id))}>
+                        <RiDeleteBin5Line className="text-2xl text-red-500"/>
                       </button>
                     </div>
                   </td>

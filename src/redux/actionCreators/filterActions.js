@@ -1,4 +1,4 @@
-import { TOGGLE_CATEGORY, TOGGLE_STOCK } from "../actionTypes/actionTypes"
+import { TOGGLE_CATEGORY, TOGGLE_FIRST_UPLOAD } from "../actionTypes/actionTypes"
 
 export const toggleCategory = (categoryName) => {
     return {
@@ -6,8 +6,9 @@ export const toggleCategory = (categoryName) => {
         payload: categoryName,
     }
 }
-    export const toggleStock = () => {
+    export const toggleFirstUpload = (firestUpload) => {
         return {
-            type: TOGGLE_STOCK,
+            type: TOGGLE_FIRST_UPLOAD,
+            payload: firestUpload,
         }
 }

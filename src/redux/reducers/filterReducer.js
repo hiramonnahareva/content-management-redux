@@ -1,9 +1,9 @@
-import { TOGGLE_CATEGORY, TOGGLE_STOCK } from "../actionTypes/actionTypes"
+import { TOGGLE_CATEGORY, TOGGLE_FIRST_UPLOAD } from "../actionTypes/actionTypes"
 
 export const initialState = {
     filter: {
         categorys: [],
-        stock: false,
+        stock: [],
     },
     keyword: "",
 }
@@ -29,7 +29,7 @@ export const filterReducer = (state = initialState, action) => {
             }
         }
        }
-        case TOGGLE_STOCK: 
+        case TOGGLE_FIRST_UPLOAD: 
         return {
             ...state,
             filter: {

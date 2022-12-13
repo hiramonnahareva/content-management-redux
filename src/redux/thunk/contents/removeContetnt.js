@@ -1,3 +1,4 @@
+import swal from "sweetalert";
 import { deleteContent } from "../../actionCreators/contentActions";
 
 const removeContent = (id) => {
@@ -11,6 +12,8 @@ const removeContent = (id) => {
     const data = await res.json();
    if(data.acknowledged){
     dispatch(deleteContent())
+    swal("Good job!", "You clicked the button!", "success");
+    
    }
 
     }

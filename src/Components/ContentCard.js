@@ -3,6 +3,7 @@ import {MdDeleteForever} from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { readHistory, deleteContent, updateContent } from '../redux/actionCreators/contentActions';
+import removeContent from '../redux/thunk/contents/removeContetnt';
 
 const ContentCard = ({content}) => {
     const [isReadMore, setIsReadMore] = useState(true);
@@ -40,7 +41,7 @@ const ContentCard = ({content}) => {
             { pathname.includes('readHistory') &&  
             <button
                title='Remove'
-               className='flex justify-between p-1 rounded-full text-red-600' onClick={() => dispatch(deleteContent(content._id))}
+               className='flex justify-between p-1 rounded-full text-red-600' onClick={() => dispatch(removeContent(content?._id))}
              >
                <MdDeleteForever size='25' />
              </button>
