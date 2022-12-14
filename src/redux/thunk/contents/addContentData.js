@@ -19,7 +19,7 @@ const addcontentData = (content) => {
         })
       );
       
-      swal("Good job!", "You clicked the button!", "success");
+      swal("WOW!", "You have successfully added the content!", "success");
     }
   };
 }

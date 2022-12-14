@@ -1,8 +1,7 @@
 import React, { useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ContentCard from '../Components/ContentCard';
-// import { loadContent } from '../redux/actionCreators/contentActions';
-import { toggleCategory, toggleFirstUpload, toggleStock } from '../redux/actionCreators/filterActions';
+import { toggleCategory, toggleFirstUpload } from '../redux/actionCreators/filterActions';
 import getContentData from '../redux/thunk/contents/fetchContents';
 
 const Home = () => {
@@ -12,17 +11,19 @@ const Home = () => {
     const contents = useSelector((state) =>  state.content.contents);
     
     const {categorys, stock} = filters;
+    console.log(filters)
       useEffect(() => {
         dispatch(getContentData())
       }, [dispatch]);
 
     // conditional rendering content
+
     let content;
     if(contents?.length){
      content = contents.map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
-    if(contents?.length && (categorys.length)){
-     content = contents.map(content => <ContentCard content={content} key={content._id}></ContentCard>)
+    if(contents?.length && categorys.length){
+     content = contents.filter((content) => categorys.includes(content?.category)).map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
     
     return (
@@ -35,7 +36,15 @@ const Home = () => {
         </button>
         <button className={`border px-3 py-1 rounded-full font-semibold ${ categorys.includes("web") ? activeClass : null}`} onClick={() => dispatch(toggleCategory("web"))}
         >
-          Wed
+          Web
+        </button>
+        <button className={`border px-3 py-1 rounded-full font-semibold ${ categorys.includes("app") ? activeClass : null}`} onClick={() => dispatch(toggleCategory("app"))}
+        >
+          App
+        </button>
+        <button className={`border px-3 py-1 rounded-full font-semibold ${ categorys.includes("software") ? activeClass : null}`} onClick={() => dispatch(toggleCategory("software"))}
+        >
+          Software
         </button>
       </div>
          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>

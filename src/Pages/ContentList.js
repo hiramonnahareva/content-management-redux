@@ -2,11 +2,9 @@ import React, { useEffect } from "react";
 import { MdOutlineEdit } from "react-icons/md";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteContent, loadContent } from "../redux/actionCreators/contentActions";
+import { Link } from "react-router-dom";
 import getContentData from "../redux/thunk/contents/fetchContents";
 import removeContent from "../redux/thunk/contents/removeContetnt";
-// import deleteContent from "../../redux/thunk/Contents/deleteContent";
-// import loadContentData from "../../redux/thunk/Contents/fetchContents";
 
 const ContentList = () => {
   const dispatch = useDispatch();
@@ -67,7 +65,11 @@ const ContentList = () => {
                     </div>
                   </td>
                           <td className='p-2'>
-                            <div className='text-left capitalize'><MdOutlineEdit className="text-2xl text-blue-500"/></div>
+                            <div className='text-left capitalize'>
+                              <Link to={`/update/${_id}`}>
+                              <MdOutlineEdit className="text-2xl text-blue-500"/>
+                              </Link>
+                            </div>
                           </td>
                   <td className='p-2'>
                     <div className='flex justify-center'>

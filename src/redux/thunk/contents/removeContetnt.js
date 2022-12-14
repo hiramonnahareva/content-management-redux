@@ -12,7 +12,7 @@ const removeContent = (id) => {
     const data = await res.json();
    if(data.acknowledged){
     dispatch(deleteContent())
-    swal("Good job!", "You clicked the button!", "success");
+    swal("Good job!", "You have successfully deleted the content!", "success");
     
    }
 

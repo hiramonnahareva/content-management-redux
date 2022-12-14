@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {MdDeleteForever} from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
-import { readHistory, deleteContent, updateContent } from '../redux/actionCreators/contentActions';
+import { readHistory, updateContent } from '../redux/actionCreators/contentActions';
 import removeContent from '../redux/thunk/contents/removeContetnt';
 
 const ContentCard = ({content}) => {
@@ -18,13 +18,6 @@ const ContentCard = ({content}) => {
           <img src={content.image} alt={content.title} />
         </div>
       <button className=' bg-gradient-to-r from-blue-500 to-cyan-500 text-yellow-50 mt-2 rounded py-1 w-20 font-semibold mb-3'>{content.category}</button>
-      {/* <div className="flex gap-2">
-      {content.subCategory.map((category) => 
-        <ul>
-          <li className=' bg-slate-300 mt-2 rounded px-2 font-semibold mb-3'>{category}</li>
-        </ul>
-      )}
-      </div> */}
         <h1 className='font-bold text-[18px] text-blue-500'>{content.title}</h1>
         <p className='font-semibold mb-3'>Date: {content.date}</p>
         <div className='flex gap-20 mt-5'>

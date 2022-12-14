@@ -1,3 +1,4 @@
+import swal from "sweetalert";
 import { updateContent } from "../../actionCreators/contentActions";
 
 const updateData = (id, content) => {
@@ -13,6 +14,7 @@ const updateData = (id, content) => {
     const data = await res.json();
    if(data.acknowledged){
     dispatch(updateContent())
+    swal("Good job!", "You have successfully edited the content!", "success");
    }
     }
 }

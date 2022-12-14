@@ -7,5 +7,4 @@ export const READ_CONTENT= "READ_CONTENT";
 // for filter
 
 export const TOGGLE_CATEGORY = "TOGGLE_CATEGORY";
-// export const TOGGLE_SUBCATEGORY = "TOGGLE_SUBCATEGORY";
 export const TOGGLE_FIRST_UPLOAD = "TOGGLE_FIRST_UPLOAD";
