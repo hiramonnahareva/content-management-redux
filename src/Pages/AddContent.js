@@ -44,9 +44,9 @@ const AddContent = () => {
                 Category
               </label>
               <select name='tag' id='tag' className='p-2 border-[1px] rounded border-gray-400' {...register("tag")}>
-                <option value='wed'>Wed</option>
-                <option value='app'>App</option>
-                <option value='software'>Software</option>
+                <option value='web'>web</option>
+                <option value='app'>app</option>
+                <option value='software'>software</option>
               </select>
             </div>
             <div className='flex flex-col w-full max-w-xs'>

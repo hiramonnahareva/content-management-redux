@@ -23,7 +23,7 @@ const Home = () => {
      content = contents.map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
     if(contents?.length && categorys.length){
-     content = contents.filter((content) => categorys.includes(content?.category)).map(content => <ContentCard content={content} key={content._id}></ContentCard>)
+     content = contents.filter((content) => categorys.includes(content?.category.toLowerCase())).map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
     
     return (

@@ -1,12 +1,12 @@
 import { loadContent } from "../../actionCreators/contentActions";
 
- const getContentData = () => {
-    return async(dispatch, getState) => {
+const getContentData = () => {
+    return async (dispatch, getState) => {
         const res = await fetch("http://localhost:5000/contents");
         const data = await res.json();
-        if(data.length){
+        if (data.length) {
             dispatch(loadContent(data))
-            
+
         }
     }
 }
