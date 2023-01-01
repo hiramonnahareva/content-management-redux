@@ -38,11 +38,11 @@ const contentReducer = (state = initialState, action) =>{
             content: [...state.content, action.payload],
             updateContent
         };
-        // case DELETE_CONTENT: 
-        // return {
-        //     ...state,
-        //     content: state.content.filter((content) => content._id !== action.payload._id), 
-        // };
+        case DELETE_CONTENT: 
+        return {
+            ...state,
+            content: state.content.filter((content) => content._id !== action.payload._id), 
+        };
         default: 
         return state;
     }

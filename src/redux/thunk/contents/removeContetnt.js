@@ -3,7 +3,7 @@ import { deleteContent } from "../../actionCreators/contentActions";
 
 const removeContent = (id) => {
     return async (dispatch, getState) => {
-        const res = await fetch(`http://localhost:5000/contents/${id}`, {
+        const res = await fetch(`https://dashboard-server-1.onrender.com/contents/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

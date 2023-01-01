@@ -3,7 +3,7 @@ import swal from 'sweetalert';
 
 const addcontentData = (content) => {
     return async(dispatch, getState) => {
-    const res = await fetch("http://localhost:5000/post", {
+    const res = await fetch("https://dashboard-server-1.onrender.com/post", {
       method: "POST",
       body: JSON.stringify(content),
       headers: {

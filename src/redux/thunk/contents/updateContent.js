@@ -4,7 +4,7 @@ import { updateContent } from "../../actionCreators/contentActions";
 const updateData = (id, content) => {
 
     return async (dispatch, getState) => {
-        const res = await fetch(`http://localhost:5000/contents/${id}`, {
+        const res = await fetch(`https://dashboard-server-1.onrender.com/contents/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
