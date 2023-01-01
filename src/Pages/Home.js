@@ -10,7 +10,7 @@ const Home = () => {
     const filters = useSelector((state) => state.filter.filter);
     const contents = useSelector((state) =>  state.content.contents);
     
-    const {categorys, stock} = filters;
+    const {categorys, first_upload} = filters;
     console.log(filters)
       useEffect(() => {
         dispatch(getContentData())
@@ -29,8 +29,8 @@ const Home = () => {
     return (
        <div className=''>
       <div className='mb-10 flex justify-end gap-5'>
-        <button className={`border px-3 py-1 rounded-full font-semibold ${ stock ? activeClass : null}`}
-        onClick={() => dispatch(toggleFirstUpload())}
+        <button className={`border px-3 py-1 rounded-full font-semibold ${ first_upload ? activeClass : null}`}
+        onClick={() => dispatch(toggleFirstUpload(new Date()))}
         >
           First Upload
         </button>

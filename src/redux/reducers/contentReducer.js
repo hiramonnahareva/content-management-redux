@@ -7,7 +7,6 @@ const initialState = {
 const contentReducer = (state = initialState, action) =>{
     const clickContent =  state.content.find((content) => content._id === action.payload._id);
     const updateContent =  state.content.find((content) => console.log(content._id, action.payload._id));
-    console.log()
     switch (action.type){
         case GET_CONTENT: {
             return {

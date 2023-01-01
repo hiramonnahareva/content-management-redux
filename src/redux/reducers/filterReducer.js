@@ -3,7 +3,7 @@ import { TOGGLE_CATEGORY, TOGGLE_FIRST_UPLOAD } from "../actionTypes/actionTypes
 export const initialState = {
     filter: {
         categorys: [],
-        stock: [],
+        first_upload: [],
     },
     keyword: "",
 }
@@ -34,7 +34,7 @@ export const filterReducer = (state = initialState, action) => {
             ...state,
             filter: {
                 ...state.filter,
-                stock: !state.filter.stock,
+                first_upload: !state.filter.first_upload,
             }
         }
         default: 
