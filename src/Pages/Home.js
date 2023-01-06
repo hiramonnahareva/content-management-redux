@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ContentCard from '../Components/ContentCard';
 import { toggleCategory, toggleFirstUpload } from '../redux/actionCreators/filterActions';
 import getContentData from '../redux/thunk/contents/fetchContents';
+import HashLoader from "react-spinners/HashLoader";
 
 const Home = () => {
   const activeClass = "text-white bg-blue-500 border-white";
@@ -26,6 +27,7 @@ const Home = () => {
      content = contents.filter((content) => categorys.includes(content?.category.toLowerCase())).map(content => <ContentCard content={content} key={content._id}></ContentCard>)
     }
     
+    
     return (
        <div className=''>
       <div className='mb-10 flex justify-end gap-5'>
@@ -47,9 +49,14 @@ const Home = () => {
           Software
         </button>
       </div>
-         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
-            {content}
-        </div>
+         {
+          content ? <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
+          {content}
+      </div> :
+      <div className='h-[100vh] flex justify-center items-center'>
+        <HashLoader color="#36d7b7" />
+      </div>
+         }
        </div>
     );
 };
